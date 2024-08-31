@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box {
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+  background: #28a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.tasks {
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.del {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
