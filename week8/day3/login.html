@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script>
+    function checkFields() {
+      // Проверяем, что оба поля заполнены
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      document.getElementById('submit').disabled = !(username && password);
+    }
+  </script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="/login" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" oninput="checkFields()">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" oninput="checkFields()">
+    <br>
+    <button type="submit" id="submit" disabled>Login</button>
+  </form>
+</body>
+</html>
