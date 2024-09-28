@@ -1,0 +1,78 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #87cefa;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover {
+  border-color: #4682b4;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4682b4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a9bd5;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.form-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
